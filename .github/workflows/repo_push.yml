@@ -1,0 +1,11 @@
+name: Test triggers for workflow
+
+run-name: Workflow for testing event based triggers in Github Actions
+on:
+ push:
+jobs:
+ Echo-build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: First step
+      run: echo "First Workflow"
