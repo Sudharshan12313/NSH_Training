@@ -5,6 +5,10 @@ on:
  issues:
   types:
   - opened
+  - labeled
+  label:
+    types:
+      - created
 jobs:
  Echo-build:
   runs-on: ubuntu-latest
