@@ -2,7 +2,9 @@ name: Test triggers for workflow
 
 run-name: Workflow for testing event based triggers in Github Actions
 on:
- workflow_dispatch:
+ issues:
+  types:
+  - opened
 jobs:
  Echo-build:
   runs-on: ubuntu-latest
