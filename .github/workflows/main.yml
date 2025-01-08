@@ -4,7 +4,7 @@ run-name: Workflow for testing event based triggers in Github Actions
 on:
  pull_request:
   branches:
-  - master
+  - main
 jobs:
  Echo-build:
   runs-on: ubuntu-latest
