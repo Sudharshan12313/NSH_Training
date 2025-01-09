@@ -3,11 +3,11 @@ name: Filter triggers branch, tags & Path for workflow
 run-name: Workflow for Filter triggers in Github Actions
 on:
  push:
-  branches-ignore:
+  branches:
   - main
-  tags-ignore:
+  tags:
     - v2
-  paths-ignore:
+  paths:
       - '**.txt'  
 jobs:
  Echo-build:
