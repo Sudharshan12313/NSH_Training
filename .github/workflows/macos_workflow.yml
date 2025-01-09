@@ -6,7 +6,7 @@ on:
  push
 jobs:
  Echo-build:
-  runs-on: macos-latest
+  runs-on: mac-latest
   steps:
     - name: First step
       run: echo "First Workflow"
