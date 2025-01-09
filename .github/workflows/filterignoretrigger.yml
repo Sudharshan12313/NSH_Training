@@ -1,0 +1,17 @@
+name: Filter triggers branch, tags & Path for workflow
+
+run-name: Workflow for Filter triggers in Github Actions
+on:
+ push:
+  branches-ignore:
+  - main
+  tags-ignore:
+    - v2
+  paths-ignore:
+      - '**.txt'  
+jobs:
+ Echo-build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: First step
+      run: echo "First Workflow"
